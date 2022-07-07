@@ -4,9 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login interface</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <style>
+        body {
+            background-image: url(images/bg.1.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+        }
+        
+    </style>
 </head>
 <body>
-    <h1>hello</h1>
+    
+    <header>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </div>
+    <div>
+        <p id="khan">Seek Coding</p>
+    </div>
+    </header>
+    <div class="cont"> 
+         
+    <div class="box">
+        <div class="khan">
+            <div id="btn"></div>
+            <button type="button" class="togg">Log in</button>
+            <button type="button" class="togg">Register  </button>
+    </div>
+      <!--  <form id="oo" class="input">
+            <input type="text" class="user" placeholder="Email Id">
+            <input type="text" class="user" placeholder="Enter Password">
+            <input type="checkbox" class="remember"><span>Remember Password</span>
+            <button type="submit" class="submit">Login</button>
+        </form>
+        <form id="ooo" class="input">
+            <input type="text" class="user" placeholder="User Id">
+            <input type="email" class="user" placeholder="Email Id">
+            <input type="text" class="user" placeholder="Enter Password">
+            <input type="checkbox" class="remember"><span>I agree to the terms & conditions</span>
+            <button type="submit" class="submit">Register</button>-->
+            <script>
+                var x=document.getElementById('login');
+                var y=document.getElementById('register');
+                var z=document.getElementById('btn');
+                function register()
+                {
+                    x.style.left='-400px';
+                    y.style.left='50px';
+                    z.style.left='110px';
+                }
+                function login()
+                {
+                    x.style.left='50px';
+                    y.style.left='450px';
+                    z.style.left='0px';
+                }
+            </script>
+            <script>
+                var modal = document.getElementById('login-form');
+                window.onclick = function(event) 
+                {
+                    if (event.target == modal) 
+                    {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+        </form>
+    </div>
+        
 </body>
 </html>
